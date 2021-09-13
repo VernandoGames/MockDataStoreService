@@ -8,7 +8,8 @@
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
     "prepublishOnly": "yarn run build",
-	"pack": "yarn pack"
+	"pack": "yarn pack",
+	"install": "npm add -g roblox-ts"
   },
   "types": "out/init.d.ts",
   "files": [
