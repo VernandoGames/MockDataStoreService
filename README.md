@@ -5,6 +5,4 @@
 	</a>
 </div>
 
-<div align = "center">
-	Typings for [Buildthomas's MockDataStoreService](https://github.com/buildthomas/MockDataStoreService)
-</div>
+Typings for [Buildthomas's MockDataStoreService](https://github.com/buildthomas/MockDataStoreService)
