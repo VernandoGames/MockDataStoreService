@@ -16,6 +16,9 @@ jobs:
       with:
         submodules: true
 
+    - name: run yarn
+      run: yarn
+
     - uses: JS-DevTools/npm-publish@v1
       with:
         token: ${{ secrets.NPM_TOKEN }}
