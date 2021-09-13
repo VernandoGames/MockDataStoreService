@@ -1,9 +1,13 @@
 {
   "name": "@rbxts/mockdatastoreservice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "out/init.lua",
-  "author": "VernandoGames <30465911+VernandoGames@users.noreply.github.com>",
+  "author": "VernandoGames",
   "license": "MIT",
+  "repository": {
+	  "type": "git",
+	  "url": "git+https://github.com/VernandoGames/MockDataStoreService"
+  },
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
