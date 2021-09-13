@@ -8,18 +8,17 @@ on:
 
 jobs:
   test:
+    name: Publish
     runs-on: ubuntu-latest
     steps:
-      - id: publish
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
 
-      - uses: actions/checkout@v1
-        with:
-          submodules: true
-          
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+    - uses: JS-DevTools/npm-publish@v1
+      with:
+        token: ${{ secrets.NPM_TOKEN }}
 
-      - if: steps.publish.outputs.type != 'none'
-        run: |
-          echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
+    - if: steps.publish.outputs.type != 'none'
+      run: |
+        echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
