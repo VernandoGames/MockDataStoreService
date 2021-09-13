@@ -1,0 +1,35 @@
+{
+  "name": "@rbxts/mockdatastoreservice",
+  "version": "1.0.0",
+  "main": "out/init.lua",
+  "author": "VernandoGames <30465911+VernandoGames@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "yarn run build",
+	"pack": "yarn pack"
+  },
+  "types": "out/init.d.ts",
+  "files": [
+    "out"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^1.2.3-types.0",
+    "@rbxts/types": "^1.0.526",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-roblox-ts": "^0.0.31",
+    "prettier": "^2.4.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@rbxts/services": "^1.2.0"
+  }
+}
